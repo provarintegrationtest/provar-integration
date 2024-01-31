@@ -1,0 +1,35 @@
+.weather-card-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-alignment{
+    align-self:center;
+    min-width: 70%;
+
+}
+
+.section-1{
+    width:100%;
+    display: flex;
+}
+
+hr{
+    margin: 0;
+}
+
+.bold-gray{
+    font-weight: 500;
+    color: dimgray;
+}
+.top-padding{
+    padding-top: 1rem;
+}
+.temperature-font{
+    color: darkslategray;
+}
+.weather-details-font{
+    color: gray;
+    font-weight: 400;
+}
