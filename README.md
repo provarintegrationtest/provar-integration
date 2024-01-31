@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+# How to deploy the repo code into another org
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+  Clone the repository in local
+  Open the folder in Visual Studio Code
+  Run SFDX command "Authorize an Org" and connect to the target org.
+  Open file "manifest/package.xml" and right click inside the file and select "Deploy code to source org"
+  THe changes will be deployed.
 
-## How Do You Plan to Deploy Your Changes?
+# How to test the assignment.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+  Weather Assignment
 
-## Configure Your Salesforce DX Project
+    1. Create Location__c object record by navigating to App Launcher > Locations
+    2. On save the record page will display the Weather Information component on the right section.
+    3. THe weather information will retrieve from the OpenWeatherMap.org and display latest weather info.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+  TaskManager Assignment
+    1. The component is present on the Home page, if you are not on the home page, navigate to App Launcher > Home (In case the component is not visible please click on Gear Icon > Edit Page > Drag and Drop the taskManager LWC component on the layout)
+    2. On the Task Manager component you will see the list of Tasks assigned to you.
+    3. There are two buttons provided as below
+      i. Mark task as completed: this button will mark the selected tasks as completed.
+      ii. Create New Task: This will launch a modal to create a new task.
+      
