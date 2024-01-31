@@ -1,9 +1,7 @@
-<!-- WeatherDisplay.html -->
 <template>
     <lightning-card title="Weather Information" icon-name="custom:custom14">
-        <!-- Display your weather information here -->
         <template lwc:if={error}>
-            <!-- <c-error-panel errors={error}></c-error-panel> -->
+            
             <div class="slds-text-color_error">{error}</div>
         </template>
         <template lwc:if={weatherInfo}>
@@ -24,7 +22,6 @@
                     <div class="weather-details-font">
                         <p class="top-padding">Wind Speed: {weatherInfo.windSpeed}</p>
                         <p>Humidity: {weatherInfo.humidity}</p>
-                            <!-- <div>Last Updated At: </div> -->
                             <template lwc:if={weatherInfo.lastUpdated}>
     
                                 Last Updated At: <lightning-formatted-date-time value={weatherInfo.lastUpdated} year="numeric" month="numeric" day="numeric" hour="2-digit" second="2-digit"
@@ -35,11 +32,7 @@
                             </template>
                     </div>
                 </div>
-                <!-- <div class="content-alignment slds-p-horizontal_small">
-                    
-                </div> -->
                 
-                <!-- Add more fields as needed -->
             </div>
         </template>
     </lightning-card>

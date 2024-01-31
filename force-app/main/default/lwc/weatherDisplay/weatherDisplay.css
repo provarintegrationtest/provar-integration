@@ -3,13 +3,11 @@
     display: flex;
     justify-content: center;
 }
-
 .content-alignment{
     align-self:center;
     min-width: 70%;
 
 }
-
 .section-1{
     width:100%;
     display: flex;
@@ -18,7 +16,6 @@
 hr{
     margin: 0;
 }
-
 .bold-gray{
     font-weight: 500;
     color: dimgray;

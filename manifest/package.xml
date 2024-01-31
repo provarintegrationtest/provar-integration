@@ -1,36 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
-        <name>ApexClass</name>
+        <members>Admin</members>
+        <name>Profile</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
+		<members>TaskManagerController</members>
+		<members>WeatherDisplayController</members>
+		<members>WeatherIntegrationService</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Location__c.Coordinates__c</members>
+		<members>WeatherInfo__c.Description__c</members>
+		<members>WeatherInfo__c.Humidity__c</members>
+		<members>WeatherInfo__c.Icon__c</members>
+		<members>WeatherInfo__c.Location__c</members>
+		<members>WeatherInfo__c.Temperature_Degree_celcius__c</members>
+		<members>WeatherInfo__c.Wind_Speed__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>OpenWeatherMapAPIKey</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Location__c</members>
+		<members>WeatherInfo__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Home_Page_Default</members>
+		<members>Location_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Location__c-Location Layout</members>
+		<members>WeatherInfo__c-Weather Info Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>taskManager</members>
+		<members>weatherDisplay</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>OpenWeatherMap</members>
+		<name>RemoteSiteSetting</name>
+	</types>
+
     <version>59.0</version>
 </Package>

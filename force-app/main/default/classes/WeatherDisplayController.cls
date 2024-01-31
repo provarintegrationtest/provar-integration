@@ -1,8 +1,6 @@
-// WeatherDisplayController.cls
 public without sharing class WeatherDisplayController {
     @AuraEnabled
     public static WeatherInfo__c getWeatherInfo(String locationId) {
-        // Query and return weather information for the specified locationId
         List<WeatherInfo__c> weatherInfoList=new List<WeatherInfo__c>();
         weatherInfoList=[SELECT Icon__c,Humidity__c,Wind_Speed__c,Temperature_Degree_celcius__c, Description__c,Location__r.Name,CreatedDate FROM WeatherInfo__c WHERE Location__c = :locationId AND CreatedDate >= :DateTime.now().addMinutes(-5) LIMIT 1];
 
@@ -13,7 +11,6 @@ public without sharing class WeatherDisplayController {
         if(!weatherInfoList.isEmpty()){
             return weatherInfoList[0];
         }else{
-            //failed to fetch weather response
             return null;
         }
     }

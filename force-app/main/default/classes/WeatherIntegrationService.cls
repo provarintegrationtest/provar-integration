@@ -20,7 +20,7 @@ public without sharing class WeatherIntegrationService {
                 return parseAndSaveWeatherInfo(response.getBody(), location);
             } else {
                 System.debug('Weather API request failed with status code: ' + response.getStatusCode());
-                // Handle error accordingly
+                
             }
         }
         return null;
@@ -57,7 +57,6 @@ public without sharing class WeatherIntegrationService {
         weatherInfo.Wind_Speed__c = windSpeed;
         weatherInfo.Humidity__c = humidity;
         weatherInfo.Icon__c = icon;
-        // Add more fields as needed
 
         insert weatherInfo;
         return weatherInfo;

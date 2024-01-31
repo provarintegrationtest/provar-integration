@@ -1,0 +1,27 @@
+<!-- taskManager.html -->
+<template>
+    <lightning-card title="Task Manager" icon-name="standard:task">
+        <div class="slds-p-around_small">
+            <!-- Display a DataTable with checkboxes -->
+            <lightning-datatable
+            key-field="Id"
+            data={wiredTasks.data}
+            columns={columns}
+            onrowselection={handleRowSelection}>
+            </lightning-datatable>
+
+            <div class="slds-grid slds-grid_align-end slds-wrap slds-gutters">
+                <!-- Button to mark selected tasks as completed -->
+                <div class="slds-m-top_medium slds-col slds-col">
+                    <lightning-button disabled={disableMarkComplete} label="Mark Selected as Completed" onclick={handleCompleteTasks} variant="success"></lightning-button>
+                </div>
+                
+                <!-- Button to create a new task -->
+                <div class="slds-m-top_medium slds-col">
+                    <lightning-button label="Create New Task" onclick={handleNewTask} variant="brand"></lightning-button>
+                </div>
+            </div>
+        </div>
+        
+    </lightning-card>
+</template>
